@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const square = require('./string_square').value
 
 app.use(bodyParser.urlencoded({
   extended: false
@@ -10,18 +11,6 @@ app.use(bodyParser.json());
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
-}
-
-
-function string_square(s) {
-
-  var value = 0;
-
-  if (typeof s === 'string') {
-    return Math.pow(s.length, 2);
-  } else
-    return -1;
-
 }
 
 // Percorsi per gestire le richieste 
@@ -35,7 +24,7 @@ app.get('/square', function (req, res) {
 
   var s = req.query.string
 
-  var quadrato = string_square(s);
+  var quadrato = square(s);
 
   res.status(200).json({
     'result': quadrato
