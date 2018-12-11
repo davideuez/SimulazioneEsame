@@ -1,0 +1,23 @@
+{
+  "name": "simulazioneesame",
+  "version": "1.0.0",
+  "description": "Simulazione esame pratico di Ingegneria del Software 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davideuez/SimulazioneEsame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davideuez/SimulazioneEsame/issues"
+  },
+  "homepage": "https://github.com/davideuez/SimulazioneEsame#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
